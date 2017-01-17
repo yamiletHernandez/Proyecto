@@ -1,0 +1,19 @@
+
+@(message: String)
+
+@main("Farmacia") {
+
+ <p>Agregar un nuevo producto a la tienda</p>
+    <form action="@routes.HomeController.addMedicina()" method="post">
+        <input type="text" name="name"/><br><br>
+        <input type="text" name="descripcion"/><br><br>
+        <input type="text" name="gramos"/><br><br>
+        <input type="text" name="precio"/><br><br>
+          
+        <button>Agregar Producto</button>
+    </form>
+    
+
+   
+
+}
