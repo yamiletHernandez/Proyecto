@@ -9,5 +9,10 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
+ "mysql" % "mysql-connector-java" % "5.1.+",
+  evolutions,
   javaWs
 )
+
+
+    
