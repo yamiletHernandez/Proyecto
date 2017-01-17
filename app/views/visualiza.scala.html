@@ -1,0 +1,34 @@
+
+@(message: List[medicina])
+
+@main("Farmacia") {
+
+
+<ul id="medicamentos"></ul>
+
+<table>
+     <tr> 
+        <th>ID</th> 
+        <th>Nombre</th> 
+        <th>Descripcion</th> 
+        <th>Gramos</th>
+        <th>Precio</th> 
+    </tr>
+    @for(medicina <- message){
+
+
+   
+    <tr>
+        <td>@medicina.getId()</td>
+        <td>@medicina.getNombre()</td>
+        <td>@medicina.getDescripcion()</td>
+        <td>@medicina.getGramos()</td>
+        <td>@medicina.getPrecio()</td>
+    </tr>
+    }
+</table>
+
+
+
+
+}
