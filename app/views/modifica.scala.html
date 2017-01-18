@@ -5,14 +5,9 @@
 
  <p>Agregar un nuevo producto a la tienda</p>
     <form action="@routes.HomeController.addMedicina" method="post">
-        
-       <label for="name">Nombre:</label>
-        <input type="text" name="nombre"/><br><br>
-        <label for="name">Descripcion:</label>
+        <input type="text" name="name"/><br><br>
         <input type="text" name="descripcion"/><br><br>
-        <label for="name">Gramos:</label>
         <input type="text" name="gramos"/><br><br>
-        <label for="name">Precio:</label>
         <input type="text" name="precio"/><br><br>
           
         <button>Agregar Producto</button>
